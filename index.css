@@ -1,0 +1,428 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.logoTopbar {
+    max-width: 110px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 17px;
+    opacity: 0;
+    z-index: -1;
+    left: 1%;
+    transition: 0.25s ease-in-out;
+}
+.first{
+    width: 100%;
+    height: auto;
+    background-image: url(1background.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: rgba(0, 179, 187, 0);
+    transition: 0.15s ease-out;
+}
+.nav .leftnav > ul{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.25s ease-in-out;
+
+}
+
+.nav > .leftnav > ul > li{
+  margin: 0 15px;
+  list-style: none;
+  padding: 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav li a{
+  text-decoration: none;
+  color: #ffffff;
+
+}
+.nav li a:hover{
+  color: black;
+  transition: 0.15s ease-out;
+
+}
+/* SCROLLNAV */
+.scrollnav{
+    background: rgba(0, 179, 187, 1)!important;
+}
+.scrollnav .logoTopbar {
+    opacity: 1;
+    z-index: 1;
+}
+.scrollnav > .leftnav > ul {
+    margin-left: 130px;
+}
+
+.leftnav {
+  width: 50%;
+  overflow: hidden;
+}
+
+.rightnav{
+  width: 50%;
+  text-align: right;
+  position: relative;
+
+}
+
+.rightnav ul{
+  justify-content: flex-end;
+  display:inline-block;
+  position: relative;
+  top: 15px;
+  right: 10px;
+}
+.rightnav ul li{
+  color: #ffffff;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.button1{
+  border-radius: 5px;
+  box-shadow: 3.9px 4.6px 8px 0 rgba(0, 0, 0, 0.22);
+  border: solid 3px #ffffff;
+  background-color: #00b3bb;
+  position: relative;
+  padding: 6px 25px;
+}
+.rightnav a{
+  text-decoration: none;
+}
+
+
+/* SUBMENU */
+.submenu > ul {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    margin-top: 25px;
+    padding: 60px;
+    display: none;
+}
+.submenu > ul > li{
+    display: inline-block;
+    width: 16%;
+    vertical-align: top;
+}
+.showMegamenu {
+    display: block!important;
+}
+.submenu > ul > li h3 {
+    font-size: 18px;
+    color: #00b3bb;
+}
+.submenu > ul > li > ul > li {
+    font-size: 16px;
+    opacity: 0.7;
+    padding:3px 0;
+}
+
+
+
+
+.content1{
+  width: 90%;
+  display: flex;
+  margin: 0 auto -20px;
+  padding: 150px 0 0;
+
+}
+
+.firsttext{
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+  text-align: left;
+  position: relative;
+  left: 20px;
+
+}
+
+.firsttext img{
+  width: 180px;
+  color: #1f1f1f;
+  margin-bottom: 10px;
+
+}
+.firsttext h2{
+  font-size: 55px;
+  color: #f8f8f8;
+  width: 90%;
+  font-weight: 900;
+  justify-content: flex-start;
+  transform: translateX(-1%);
+
+
+}
+.firsttext p{
+    width: 90%;
+    font-size: 18px;
+    color: #1f1f1f;
+    padding-top: 15px;
+    line-height: 160%;
+
+}
+.backgroundpic2 img{
+  max-width: 719px;
+  width: 100%;
+
+}
+
+.midmenu{
+  position: relative;
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto -55px;
+  z-index: 9;
+
+
+}
+.item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f8f8;
+  border: solid 3px #dfdfdf;
+  border-radius: 11px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+.item a{
+  width:16.6%;
+  text-decoration: none;
+}
+.item a .category{
+    border-right: solid 3px #dfdfdf;
+    justify-content:center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding:20px 0;
+    color: #1f1f1f;
+}
+.item a:hover {
+    background: #e7feff;
+}
+.border-none{
+  border-right: none!important;
+}
+.category a{
+  flex-direction: column;
+  color: #1f1f1f;
+}
+.category img{
+  width: 25%;
+  height: auto;
+  object-fit: contain;
+
+
+}
+/*
+.midmenu ul{ /* why its not working with only the class?
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  background-colr-radius: 11px;or: #f8f8f8;
+  border: solid 3px #dfdfdf;
+  border-radius: 11px;
+
+}
+.midmenu li{
+  width:235px;
+  height: 151px;
+  border: solid 1px #dfdfdf;
+  text-align: center;
+  display: block;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.midmenu li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.midmenu img{
+  width: 53px;
+  height: 53px;
+
+}
+*/
+.second{
+  background-color: WhiteSmoke;
+}
+.pic{
+  text-align: center;
+  background-image: url("logo-bacground@3x.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+
+
+}
+.pic img{
+  width: 50%;
+  margin: 0 auto;
+}
+ h1{
+  color: #7dc5ca;
+  font-weight: 900;
+  padding-bottom: 47px;
+  padding-top: 50px;
+}
+.button{
+  position: absolute;
+  left: 50%;
+  bottom: -17px;
+  transform: translateX(-50%); /* Mooving the element helf precent
+  of its left precent. center the element. */
+
+}
+.button a{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: solid 4px row#ffffff;
+  border-radius: 36.5px;
+  background-color: #7cc4c9;
+
+
+}
+
+
+.banner{
+  width: 85%;
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+
+}
+.box{
+  padding: 40px;
+}
+.col50{
+  width: 50%;
+}
+.box img{ /*choosing only the image inside of the box element*/
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+}
+.box p{
+  width: 80%; /*made the picture bigger also, rodrigo would let me know about it */
+}
+.howitworks{
+  text-align: center;
+}
+.howitworks img{
+    width: 65%;
+    height: 60%;
+
+}
+.text{
+  display: inline-block;
+  width: calc(100% - 90px);
+
+}
+.row{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 65%;
+}
+.steps{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 20%;
+
+}
+.steps h2{
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.testamonial {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+
+
+}
+.testamonial h1{
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  left: 100px;
+}
+.content img {
+  width:25%;
+  height: 20%;
+}
+.text2{
+  position: relative;
+  top: 35px;
+  width: 40%;
+  text-align: left;
+  padding-left: 100px;
+
+}
+.text2 h2{
+  margin-bottom: 20px;
+}
+@media(max-width:1500px){
+    .firsttext img {
+        width: 140px;
+
+    }
+    .first{
+        background-position: -240px 0;
+    }
+}
